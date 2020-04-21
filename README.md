@@ -1,6 +1,6 @@
 
 
-### Steps::
+### Tasks -
 
 - [x] Setup Local Docker Registry using Docker.
 - [x] Add Basic Authentication to this Docker Registry.
@@ -276,4 +276,6 @@ registry:
 ___
 
 # 3. Role Based Multi User Authentication for Docker Registry
+
+
 

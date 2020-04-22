@@ -125,7 +125,7 @@
 
 - **restart docker service...**
 
-  `servce docker restart`
+  `service docker restart`
 
 - **Start the container...**
 

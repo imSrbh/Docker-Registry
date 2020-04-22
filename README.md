@@ -113,13 +113,14 @@
 
 - And now follow these steps...
   ```sh
-  	cd /etc/docker/
-  	mkdir certs.d
+  cd /etc/docker/
+  mkdir certs.d
   
-  	cd certs.d/
-  	mkdir repo.docker.local:5000
+  cd certs.d/
+  mkdir repo.docker.local:5000
   
-  	cp certs/domain.crt /etc/docker/certs.d/repo.docker.local\:5000/ca.crt
+  Copy the domain.crt file.
+  cp certs/domain.crt /etc/docker/certs.d/repo.docker.local\:5000/ca.crt
   ```
 
 - **restart docker service...**

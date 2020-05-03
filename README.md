@@ -101,7 +101,7 @@
   openssl req -newkey rsa:4096 -nodes -sha256 -keyout certs/domain.key -x509 -days 365 -out certs/domain.crt
   ```
 
-- 
+
 
   
 
@@ -110,6 +110,8 @@
   `Common Name (e.g. server FQDN or YOUR name) []:repo.docker.local`
 
   anyone else who will be accessing the registry he should access it at `repo.docker.local `  url otherwise it will not be accessible.
+  
+  >We can use any name instead of local `repo.docker.xyz`. the only thing we have to take care is /etc/hosts we should add `<ip_addr> repo.docker.xyz`  
 
 - And now follow these steps...
   ```sh
@@ -207,7 +209,7 @@ saurabh:$2y$05$VzJ.ud8r06fYO/V/SV7dfOpb2i5ipU5E05IdtaDbW8Py15e.y8ixO
 
 Now your container is Up and Running
 
-so you will see this error when you try to push image after running the registry achitcontainer...
+so you will see this error when you try to push image after running the registry container...
 ```
 server@ubuntu:~$ sudo docker image push repo.docker.local:5000/ubuntu
 The push refers to repository [repo.docker.local:5000/ubuntu]
